@@ -32,6 +32,11 @@ body {
 .nav a:hover{
 	opacity:0.6 !important;
 }
+.navbar-collapse{
+  border:none !important;
+  box-shadow:none !important;
+  -webkit-box-shadow:none !important;
+}
 
 /* =============================================================================
   CONTENT
