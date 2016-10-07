@@ -122,7 +122,7 @@ body {
     text-transform: uppercase;
     line-height: 2.2em;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     bottom: 0;
 }
 
