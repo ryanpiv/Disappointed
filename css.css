@@ -32,6 +32,11 @@ body {
 .nav a:hover{
 	opacity:0.6 !important;
 }
+.navbar-collapse{
+  border:none !important;
+  box-shadow:none !important;
+  -webkit-box-shadow:none !important;
+}
 
 /* =============================================================================
   CONTENT
@@ -117,7 +122,7 @@ body {
     text-transform: uppercase;
     line-height: 2.2em;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     bottom: 0;
 }
 
@@ -136,7 +141,13 @@ body {
 
 .section-title-container{
 	text-align: center;
-	padding:5%;
+	padding-bottom:5%;
+}
+@media only screen and (max-width : 480px) {
+  .section-title-container
+  {
+    padding-top:10%;
+  }
 }
 .section-title, .section-subtitle{
 	color:white;
