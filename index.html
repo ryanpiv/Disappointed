@@ -26,6 +26,8 @@
     <script src="scrollNav/jquery.scrollNav.min.js"></script>
     <script src="waypoints/src/waypoint.js" type="text/javascript"></script>
     <script src="waypoints/src/adapters/noframework.js" type="text/javascript"></script>
+    <script src="waypoints/src/group.js" type="text/javascript"></script>
+    <script src="waypoints/src/context.js" type="text/javascript"></script>
 
     <link href="css.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -87,6 +89,8 @@
             <div class="row">
                 <div class="col-lg-12 section-title-container">
                     <h1 class="section-title">Raid Progress</h1>
+                    <h3><a class="wowprog" href="http://www.wowprogress.com/guild/us/zul-jin/Disappointed" target="_blank">WoWProgress.com</a></h3>
+                    <h3><a class="warclogs" href="https://www.warcraftlogs.com/guilds/userreportslist/30820" target="_blank">WarcraftLogs.com</a></h3>
                 </div>
                 <div class="col-lg-12">
                     <h1>Emerald Nightmare</h1>
@@ -101,6 +105,7 @@
                 <div class="col-lg-12">
                     <div id="en-normal-line"></div>        
                 </div>
+                
             </div>
         </div>
     </section>
@@ -258,6 +263,8 @@
 
     <script type="text/javascript">
         (function() {
+
+
             $.material.init();
 
           /**
@@ -277,8 +284,6 @@
 
 
         $(document).ready(function(){
-
-
             var bar1 = new ProgressBar.Line('#en-heroic-line', {
               strokeWidth: 4,
               easing: 'easeInOut',
@@ -307,9 +312,6 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-
-            bar1.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
-
             var bar2 = new ProgressBar.Line('#en-normal-line', {
               strokeWidth: 4,
               easing: 'easeInOut',
@@ -339,7 +341,21 @@
               }
             });
 
-            bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+            var waypoint = new Waypoint({
+              element: document.getElementById('en-heroic-line'),
+              handler: function() {
+                bar1.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
+              },
+              offset: '100%'
+            });
+            var waypoint = new Waypoint({
+              element: document.getElementById('en-normal-line'),
+              handler: function() {
+                bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+              },
+              offset: '120%'
+            });
+            
         });
 
         $('a[href^="#"]').on('click', function (e) {
