@@ -71,13 +71,8 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
-<<<<<<< HEAD
                 <h3 class="">7&#47;7 Heroic Emerald Nightmare</h2>
                 <h3 class="">Recruiting Ranged DPS and 1 Shaman/Pally Heals</h2>  
-=======
-                <h3 class="">6&#47;7 Heroic Emerald Nightmare</h2>
-                <h3 class="">Recruiting Ranged DPS and 1 Healer</h2>  
->>>>>>> origin/gh-pages
             </div>
         </div>
     </section>
@@ -323,12 +318,8 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-<<<<<<< HEAD
-
             bar1.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
 
-=======
->>>>>>> origin/gh-pages
             var bar2 = new ProgressBar.Line('#en-normal-line', {
               strokeWidth: 4,
               easing: 'easeInOut',
@@ -357,8 +348,6 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-
-<<<<<<< HEAD
             bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
 
             var bar3 = new ProgressBar.Line('#en-mythic-line', {
@@ -389,9 +378,15 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-
             bar3.animate(0 / 0);  // Number from 0.0 to 1.0
-=======
+
+            var waypoint = new Waypoint({
+              element: document.getElementById('en-mythic-line'),
+              handler: function() {
+                bar3.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
+              },
+              offset: '100%'
+            });
             var waypoint = new Waypoint({
               element: document.getElementById('en-heroic-line'),
               handler: function() {
@@ -406,8 +401,6 @@
               },
               offset: '120%'
             });
-            
->>>>>>> origin/gh-pages
         });
 
         $('a[href^="#"]').on('click', function (e) {
