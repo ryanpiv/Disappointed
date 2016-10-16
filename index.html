@@ -69,8 +69,8 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
-                <h3 class="">6&#47;7 Heroic Emerald Nightmare</h2>
-                <h3 class="">Recruiting Ranged DPS</h2>  
+                <h3 class="">7&#47;7 Heroic Emerald Nightmare</h2>
+                <h3 class="">Recruiting Ranged DPS and 1 Shaman/Pally Heals</h2>  
             </div>
         </div>
     </section>
@@ -90,7 +90,13 @@
                 </div>
                 <div class="col-lg-12">
                     <h1>Emerald Nightmare</h1>
-                    <h2>Heroic, 6/7</h2>
+                    <h2>Mythic, 0/7</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div id="en-mythic-line"></div>        
+                </div>
+                <div class="col-lg-12">
+                    <h2>Heroic, 7/7</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="en-heroic-line"></div>        
@@ -277,8 +283,6 @@
 
 
         $(document).ready(function(){
-
-
             var bar1 = new ProgressBar.Line('#en-heroic-line', {
               strokeWidth: 4,
               easing: 'easeInOut',
@@ -308,7 +312,7 @@
               }
             });
 
-            bar1.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
+            bar1.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
 
             var bar2 = new ProgressBar.Line('#en-normal-line', {
               strokeWidth: 4,
@@ -340,6 +344,37 @@
             });
 
             bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+
+            var bar3 = new ProgressBar.Line('#en-mythic-line', {
+              strokeWidth: 4,
+              easing: 'easeInOut',
+              duration: 1400,
+              color: '#FFEA82',
+              trailColor: '#eee',
+              trailWidth: 1,
+              svgStyle: {width: '100%', height: '100%'},
+              text: {
+                style: {
+                  // Text color.
+                  // Default: same as stroke color (options.color)
+                  color: 'transparent',
+                  position: 'absolute',
+                  right: '0',
+                  top: '30px',
+                  padding: 0,
+                  margin: 0,
+                  transform: null
+                },
+                autoStyleContainer: false
+              },
+              from: {color: '#FFEA82'},
+              to: {color: '#ED6A5A'},
+              step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 10));
+              }
+            });
+
+            bar3.animate(0 / 0);  // Number from 0.0 to 1.0
         });
 
         $('a[href^="#"]').on('click', function (e) {
