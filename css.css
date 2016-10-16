@@ -180,6 +180,11 @@ body {
 	background-color:#e74c3c;
 	color:white;
 }
+.wowprog, .warclogs{
+  color:white;
+  text-decoration: none !important;
+
+}
 
 /* =============================================================================
   SECTION-RECRUITMENT
