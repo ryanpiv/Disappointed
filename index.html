@@ -320,7 +320,7 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-            bar1.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+            //bar1.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
 
             var bar2 = new ProgressBar.Line('#en-normal-line', {
               strokeWidth: 4,
@@ -350,7 +350,7 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-            bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+            //bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
 
             var bar3 = new ProgressBar.Line('#en-mythic-line', {
               strokeWidth: 4,
@@ -380,28 +380,28 @@
                 bar.setText(Math.round(bar.value() * 10));
               }
             });
-            bar3.animate(0 / 0);  // Number from 0.0 to 1.0
+            //bar3.animate(0 / 0);  // Number from 0.0 to 1.0
 
             var waypoint = new Waypoint({
               element: document.getElementById('en-mythic-line'),
               handler: function() {
-                bar3.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
+                bar3.animate(0 / 0.7);  // Number from 0.0 to 1.0
               },
-              offset: '100%'
+              offset: '90%'
             });
             var waypoint = new Waypoint({
               element: document.getElementById('en-heroic-line'),
               handler: function() {
-                bar1.animate(0.6 / 0.7);  // Number from 0.0 to 1.0
+                bar1.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
               },
-              offset: '100%'
+              offset: '90%'
             });
             var waypoint = new Waypoint({
               element: document.getElementById('en-normal-line'),
               handler: function() {
                 bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
               },
-              offset: '120%'
+              offset: '90%'
             });
         });
 
