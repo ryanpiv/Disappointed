@@ -78,9 +78,9 @@
     </section>
 
     <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
-        <source src="media/en_2.m4v" type="video/mp4" />
-        <source src="media/en_2.ogv" type="video/ogg" />
-        <source src="media/en_2.webm" type="video/webm" />
+        <source src="media/trial.m4v" type="video/mp4" />
+        <source src="media/trial.ogv" type="video/ogg" />
+        <source src="media/trial.webm" type="video/webm" />
         Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
     </video>
 
@@ -91,6 +91,19 @@
                     <h1 class="section-title">Raid Progress</h1>
                     <h3><a class="wowprog" href="http://www.wowprogress.com/guild/us/zul-jin/Disappointed" target="_blank">WoWProgress.com</a></h3>
                     <h3><a class="warclogs" href="https://www.warcraftlogs.com/guilds/userreportslist/30820" target="_blank">WarcraftLogs.com</a></h3>
+                </div>
+                <div class="col-lg-12">
+                    <h1>Trial of Valor</h1>
+                    <h2>Heroic, 0/3</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div id="trial-heroic-line"></div>        
+                </div>
+                <div class="col-lg-12">
+                    <h2>Normal, 0/3</h2>
+                </div>
+                <div class="col-lg-12">
+                    <div id="trial-normal-line"></div>        
                 </div>
                 <div class="col-lg-12">
                     <h1>Emerald Nightmare</h1>
@@ -381,6 +394,66 @@
             });
             //bar3.animate(0 / 0);  // Number from 0.0 to 1.0
 
+            var bar4 = new ProgressBar.Line('#trial-normal-line', {
+              strokeWidth: 4,
+              easing: 'easeInOut',
+              duration: 1400,
+              color: '#FFEA82',
+              trailColor: '#eee',
+              trailWidth: 1,
+              svgStyle: {width: '100%', height: '100%'},
+              text: {
+                style: {
+                  // Text color.
+                  // Default: same as stroke color (options.color)
+                  color: 'transparent',
+                  position: 'absolute',
+                  right: '0',
+                  top: '30px',
+                  padding: 0,
+                  margin: 0,
+                  transform: null
+                },
+                autoStyleContainer: false
+              },
+              from: {color: '#FFEA82'},
+              to: {color: '#ED6A5A'},
+              step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 10));
+              }
+            });
+            //bar3.animate(0 / 0);  // Number from 0.0 to 1.0
+
+            var bar5 = new ProgressBar.Line('#trial-heroic-line', {
+              strokeWidth: 4,
+              easing: 'easeInOut',
+              duration: 1400,
+              color: '#FFEA82',
+              trailColor: '#eee',
+              trailWidth: 1,
+              svgStyle: {width: '100%', height: '100%'},
+              text: {
+                style: {
+                  // Text color.
+                  // Default: same as stroke color (options.color)
+                  color: 'transparent',
+                  position: 'absolute',
+                  right: '0',
+                  top: '30px',
+                  padding: 0,
+                  margin: 0,
+                  transform: null
+                },
+                autoStyleContainer: false
+              },
+              from: {color: '#FFEA82'},
+              to: {color: '#ED6A5A'},
+              step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 10));
+              }
+            });
+            //bar3.animate(0 / 0);  // Number from 0.0 to 1.0
+
             var waypoint = new Waypoint({
               element: document.getElementById('en-mythic-line'),
               handler: function() {
@@ -399,6 +472,20 @@
               element: document.getElementById('en-normal-line'),
               handler: function() {
                 bar2.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
+              },
+              offset: '90%'
+            });
+            var waypoint = new Waypoint({
+              element: document.getElementById('heroic-normal-line'),
+              handler: function() {
+                bar2.animate(0 / 0.3);  // Number from 0.0 to 1.0
+              },
+              offset: '90%'
+            });
+            var waypoint = new Waypoint({
+              element: document.getElementById('heroic-heroic-line'),
+              handler: function() {
+                bar2.animate(0 / 0.3);  // Number from 0.0 to 1.0
               },
               offset: '90%'
             });
