@@ -71,7 +71,8 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
-                <h3 class="">7&#47;7 Heroic Emerald Nightmare</h2>
+                <h3 class="">3&#47;3 Normal Trial of Valor</h3>
+                <h3 class="">7&#47;7 Heroic Emerald Nightmare</h3>
                 <h3 class="">Recruiting Ranged DPS and Heals</h2>  
             </div>
         </div>
@@ -100,7 +101,7 @@
                     <div id="trial-heroic-line"></div>        
                 </div>
                 <div class="col-lg-12">
-                    <h2>Normal, 0/3</h2>
+                    <h2>Normal, 3/3</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="trial-normal-line"></div>        
@@ -476,16 +477,16 @@
               offset: '90%'
             });
             var waypoint = new Waypoint({
-              element: document.getElementById('heroic-normal-line'),
+              element: document.getElementById('trial-normal-line'),
               handler: function() {
-                bar2.animate(0 / 0.3);  // Number from 0.0 to 1.0
+                bar4.animate(0.3 / 0.3);  // Number from 0.0 to 1.0
               },
               offset: '90%'
             });
             var waypoint = new Waypoint({
-              element: document.getElementById('heroic-heroic-line'),
+              element: document.getElementById('trial-heroic-line'),
               handler: function() {
-                bar2.animate(0 / 0.3);  // Number from 0.0 to 1.0
+                bar5.animate(0 / 0.3);  // Number from 0.0 to 1.0
               },
               offset: '90%'
             });
