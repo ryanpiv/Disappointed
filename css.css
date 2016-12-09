@@ -32,6 +32,9 @@ body {
 .nav a:hover{
 	opacity:0.6 !important;
 }
+a:hover{
+  color: #23527c !important;
+}
 .navbar-collapse{
   border:none !important;
   box-shadow:none !important;
