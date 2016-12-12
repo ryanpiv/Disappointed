@@ -133,7 +133,7 @@ a:hover{
   ALL SECTIONS EXCEPT LANDING
 ============================================================================= */
 
-.section-progress, .section-recruitment, .section-streams, .section-about, .section-contact {
+.section-recruitment, .section-streams, .section-about, .section-contact {
 	padding:5%;
 	padding-top:10%;
 	z-index: 2;
@@ -182,11 +182,85 @@ a:hover{
 .section-progress{
 	background-color:#e74c3c;
 	color:white;
+  padding-top:10%;
+  z-index: 2;
+  min-height: 100vh;
+  width:100%;
+  position: relative;
+}
+.section-progress h1 {
+  padding-top: 3%;
 }
 .wowprog, .warclogs{
   color:white;
   text-decoration: none !important;
+}
+.img-gallery{
+  display: flex;
+  padding-top:2%;
+}
+.image-boss{
+  display: inline-block;
+  height:35vh;
+  width:14.1%;
+  background-size:cover;
+  flex: 1 100%;
+  align-items: center;
+  justify-content: center;
+}
+.image-en-boss{
+  width:14.1%;
+}
+.image-tov-boss{
+  width:33.1%;
+}
+.overlay-skull{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  flex-wrap: wrap;
+}
+.overlay-skull > img {
+  opacity: 0.6;
+}
+.overlay-skull > small{
+  text-align: center;
+  flex-basis: 100%;
+}
+/* EMERALD NIGHTMARE */
+.nyth{
+  background-image: url("media/en/nythresize.jpg");
+}
+.ursoc{
+  background-image: url("media/en/ursocresize.jpg");
+}
+.spider{
+  background-image: url("media/en/spiderresize.jpg");
+}
+.dragons{
+  background-image: url("media/en/dragonsresize.jpg");
+}
+.eye{
+  background-image: url("media/en/eyeresize.jpg");
+}
+.cenarius{
+  background-image: url("media/en/cenariusresize.jpg");
+}
+.xavius{
+  background-image: url("media/en/xaviusresize.jpg");
+}
 
+/* TRIAL OF VALOR */
+.odyn{
+  background-image: url("media/ToV/odynresize.jpg"); 
+}
+.guarm{
+  background-image: url("media/ToV/guarmresize.jpg"); 
+}
+.heljya{
+  background-image: url("media/ToV/heljyaresize.jpg"); 
 }
 
 /* =============================================================================
