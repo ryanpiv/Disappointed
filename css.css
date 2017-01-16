@@ -76,6 +76,26 @@ a:hover{
   border: solid 4px rgb(255,60,100);
 }
 
+.parallax { 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 2;
+}
+
+.parallax-bg1{
+  /* The image used */
+  background-image: url("media/ulduar.jpg");
+  height:500px;
+}
+
+.parallax-bg2{
+  height:500px;
+}
+
 
 /* =============================================================================
   VIDEO
