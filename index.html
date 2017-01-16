@@ -90,6 +90,8 @@
         </div>
     </section>
 
+    <div class="section-landing-content video"></div>
+
     <!--
     <video id="my-video" class="video" loop autobuffer autoplay muted width="300" height="150">
         <source src="media/trial.m4v" type="video/mp4" />
@@ -715,7 +717,7 @@
             var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
-                'scrollTop': $target.offset().top+2
+                'scrollTop': $target.offset().top
             }, 500, 'swing', function () {
                 window.location.hash = target;
                 //$(document).on("scroll", onScroll);

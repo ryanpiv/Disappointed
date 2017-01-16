@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".section-landing").vegas({
+	$(".section-landing-content").vegas({
 	    slides: [
 	        { src: "media/EN/kills/m_xavius.jpg" }
 	    ],
