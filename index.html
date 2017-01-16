@@ -72,7 +72,7 @@
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
                 <h3 class="">3&#47;3 Heroic Trial of Valor</h3>
-                <h3 class="">5&#47;7 Mythic Emerald Nightmare</h3>
+                <h3 class="">7&#47;7 Mythic Emerald Nightmare</h3>
                 <h3 class="">Recruiting Exceptional Players</h2>  
             </div>
         </div>
@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Emerald Nightmare</h1>
-                    <h2>Mythic, 5/7</h2>
+                    <h2>Mythic, 7/7</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="en-mythic-line"></div>        
@@ -190,8 +190,18 @@
                         <small>1.15.17</small>
                     </div>
                 </div>
-                <div class="image-boss image-en-boss cenarius"></div>
-                <div class="image-boss image-en-boss xavius"></div>
+                <div class="image-boss image-en-boss cenarius">
+                	<div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                        <small>1.16.17</small>
+                    </div>
+                </div>
+                <div class="image-boss image-en-boss xavius">
+                	<div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                        <small>1.16.17</small>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -529,7 +539,7 @@
             var waypoint = new Waypoint({
               element: document.getElementById('en-mythic-line'),
               handler: function() {
-                bar3.animate(0.5 / 0.7);  // Number from 0.0 to 1.0
+                bar3.animate(0.7 / 0.7);  // Number from 0.0 to 1.0
               },
               offset: '90%'
             });
