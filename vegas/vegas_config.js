@@ -7,7 +7,7 @@ $(document).ready(function() {
 	                src: [
 	                    'media/nighthold.mp4'
 	                ],
-	                loop: false,
+	                loop: true,
 	                mute: true
 	            },
 	            delay: 30000 
