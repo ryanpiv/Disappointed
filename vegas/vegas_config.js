@@ -2,11 +2,11 @@ $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
 	    	{ src: "media/EN/kills/m_xavius.jpg" },
-	        { src: "media/nighthold_placeholder.jpg",
+	        { src: "media/NH/nighthold_placeholder.jpg",
 	            video: {
 	                src: [
-	                    'media/nighthold.mp4',
-	                    'media/nighthold.webm'
+	                    'media/NH/nighthold.mp4',
+	                    'media/NH/nighthold.webm'
 	                ],
 	                loop: true,
 	                mute: true
