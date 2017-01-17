@@ -11,7 +11,7 @@ $(document).ready(function() {
 	                loop: true,
 	                mute: true
 	            },
-	            delay: 30000 
+	            delay: 31000 
 	        }
 	    ],
 	    delay: 15000,
