@@ -5,7 +5,8 @@ $(document).ready(function() {
 	        { src: "media/nighthold_placeholder.jpg",
 	            video: {
 	                src: [
-	                    'media/nighthold.mp4'
+	                    'media/nighthold.mp4',
+	                    'media/nighthold.webm'
 	                ],
 	                loop: true,
 	                mute: true
