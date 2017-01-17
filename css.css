@@ -76,13 +76,33 @@ a:hover{
   border: solid 4px rgb(255,60,100);
 }
 
+.parallax { 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 2;
+}
+
+.parallax-bg1{
+  /* The image used */
+  background-image: url("media/ulduar.jpg");
+  height:500px;
+}
+
+.parallax-bg2{
+  height:500px;
+}
+
 
 /* =============================================================================
   VIDEO
 ============================================================================= */
 
 .video {
-  position: fixed;
+  position: fixed !important;
   top: 50%; left: 50%;
   z-index: 1;
   min-width: 100%;
@@ -95,16 +115,16 @@ a:hover{
 .overlay{
 	opacity: 0.4 !important;
 	position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-    margin: 0;
-    z-index: 3;
-    background: url("media/02.png") center center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+  background: url("vegas/overlays/02.png") center center;
 }
 
 /* =============================================================================
@@ -120,13 +140,13 @@ a:hover{
 ============================================================================= */
 .home-info{
 	position: absolute;
-    overflow: hidden;
-    font-family: "Raleway";
-    text-transform: uppercase;
-    line-height: 2.2em;
-    width: 100%;
-    z-index: 4;
-    bottom: 0;
+  overflow: hidden;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  line-height: 2.2em;
+  width: 100%;
+  z-index: 4;
+  bottom: 0;
 }
 
 /* =============================================================================
@@ -261,6 +281,38 @@ a:hover{
 }
 .heljya{
   background-image: url("media/ToV/heljyaresize.jpg"); 
+}
+
+/* NIGHTHOLD */
+.skorpyron{
+  background-image: url("media/nh/skorpyron.png"); 
+}
+.anamoly{
+  background-image: url("media/nh/anamoly.png"); 
+}
+.trilliax{
+  background-image: url("media/nh/trilliax.png"); 
+}
+.aluriel{
+  background-image: url("media/nh/aluriel.png"); 
+}
+.krosus{
+  background-image: url("media/nh/krosus.png"); 
+}
+.telarn{
+  background-image: url("media/nh/telarn.png"); 
+}
+.tichondrius{
+  background-image: url("media/nh/tichondrius.png"); 
+}
+.etraeus{
+  background-image: url("media/nh/etraeus.png"); 
+}
+.elisandre{
+  background-image: url("media/nh/elisandre.png"); 
+}
+.guldan{
+  background-image: url("media/nh/guldan.png"); 
 }
 
 /* =============================================================================
