@@ -76,21 +76,6 @@
   transform: translateX(0);
 }
 
-@media screen and (max-width: 600px) {
-  .accordion { height: auto; }
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
 /* NIGHTHOLD */
 .accordion-nh ul:hover li:hover { width: 60%; }
 
@@ -123,3 +108,19 @@
 .accordion-en ul li:nth-child(5) { background-image: url("../media/en/eyeresize.jpg"); }
 .accordion-en ul li:nth-child(6) { background-image: url("../media/en/cenariusresize.jpg"); }
 .accordion-en ul li:nth-child(7) { background-image: url("../media/en/xaviusresize.jpg"); }
+
+/* THIS MUST BE LAST */
+@media screen and (max-width: 600px) {
+  .accordion { height: auto; }
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
