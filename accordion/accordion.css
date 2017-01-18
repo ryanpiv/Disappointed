@@ -77,7 +77,7 @@
 }
 
 /* NIGHTHOLD */
-.accordion-nh ul:hover li:hover { width: 60%; }
+.accordion-nh ul:hover li:hover { width: 40%; }
 
 .accordion-nh ul li:nth-child(1) { background-image: url("../media/NH/skorpyron.png"); }
 .accordion-nh ul li:nth-child(2) { background-image: url("../media/NH/anamoly.png"); }
@@ -98,7 +98,7 @@
 .accordion-tov ul li:nth-child(3) { background-image: url("../media/tov/heljyaresize.jpg"); }
 
 /* EMERALD NIGHTMARE */
-.accordion-en ul:hover li:hover { width: 40%; }
+.accordion-en ul:hover li:hover { width: 25%; }
 .accordion-en { margin-bottom: 0 !important; }
 
 .accordion-en ul li:nth-child(1) { background-image: url("../media/en/nythresize.jpg"); }
