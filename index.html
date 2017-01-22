@@ -85,7 +85,7 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
-                <h3 class="">10&#47;10 Normal Nighthold</h3>
+                <h3 class="">5&#47;10 Heroic Nighthold</h3>
                 <h3 class="">3&#47;3 Heroic Trial of Valor</h3>
                 <h3 class="">7&#47;7 Mythic Emerald Nightmare</h3>
                 <h3 class="">Recruiting Shadow Priest and Other Exceptional Players</h2>  
@@ -120,7 +120,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Nighthold</h1>
-                    <h2>Heroic, 0/10</h2>
+                    <h2>Heroic, 5/10</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="nh-heroic-line"></div>        
@@ -136,34 +136,69 @@
         <div class="accordion accordion-nh">
           <ul>
             <li>
-              <div> <a href="#">
-                <h2>Skorpyron</h2>
-                <!-- <p>Description 1</p> -->
-                </a> </div>
+                <div class="image-boss">
+                    <div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                    </div>
+                </div>
+                <div> 
+                    <a href="#">
+                        <h2>Skorpyron</h2>
+                        <p>Heroic: 1.22.17</p>
+                    </a> 
+                </div>
             </li>
             <li>
-              <div> <a href="#">
-                <h2>Chronomatic Anomaly</h2>
-                <!-- <p>Description 1</p> -->
-                </a> </div>
+                <div class="image-boss">
+                    <div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                    </div>
+                </div>
+                <div> 
+                    <a href="#">
+                        <h2>Chronomatic Anomaly</h2>
+                        <p>Heroic: 1.22.17</p>
+                    </a> 
+                </div>
             </li>
             <li>
-              <div> <a href="#">
-                <h2>Trilliax</h2>
-                <!-- <p>Description 1</p> -->
-                </a> </div>
+                <div class="image-boss">
+                    <div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                    </div>
+                </div>
+                <div> 
+                    <a href="#">
+                        <h2>Trilliax</h2>
+                        <p>Heroic: 1.22.17</p>
+                    </a> 
+                </div>
             </li>
             <li>
-              <div> <a href="#">
-                <h2>Spellblade Aluriel</h2>
-                <!-- <p>Description 1</p> -->
-                </a> </div>
+                <div class="image-boss">
+                    <div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                    </div>
+                </div>
+                <div> 
+                    <a href="#">
+                        <h2>Spellblade Aluriel</h2>
+                        <p>Heroic: 1.22.17</p>
+                    </a> 
+                </div>
             </li>
             <li>
-              <div> <a href="#">
-                <h2>Krosus</h2>
-                <!-- <p>Description 1</p> -->
-                </a> </div>
+              <div class="image-boss">
+                    <div class="overlay-skull">
+                        <img class="img-responsive" src="media/skull.png" />
+                    </div>
+                </div>
+                <div> 
+                    <a href="#">
+                        <h2>Krosus</h2>
+                        <p>Heroic: 1.22.17</p>
+                    </a> 
+                </div>
             </li>
             <li>
               <div> <a href="#">
@@ -220,7 +255,7 @@
         <div class="accordion accordion-tov">
           <ul>
             <li>
-            <div class="image-boss">
+                <div class="image-boss">
                     <div class="overlay-skull">
                         <img class="img-responsive" src="media/skull.png" />
                     </div>
@@ -233,15 +268,17 @@
               </div>
             </li>
             <li>
-            <div class="image-boss">
+                <div class="image-boss">
                     <div class="overlay-skull">
                         <img class="img-responsive" src="media/skull.png" />
                     </div>
                 </div>
-              <div> <a href="#">
-                <h2>Guarm</h2>
-                <p>Heroic: 11.13.16</p>
-                </a> </div>
+                <div> 
+                    <a href="#">
+                        <h2>Guarm</h2>
+                        <p>Heroic: 11.13.16</p>
+                    </a> 
+                </div>
             </li>
             <li>
             <div class="image-boss">
@@ -866,7 +903,7 @@
             var waypoint = new Waypoint({
               element: document.getElementById('nh-heroic-line'),
               handler: function() {
-                bar7.animate(0 / 1);  // Number from 0.0 to 1.0
+                bar7.animate(0.5 / 1);  // Number from 0.0 to 1.0
               },
               offset: '90%'
             });
