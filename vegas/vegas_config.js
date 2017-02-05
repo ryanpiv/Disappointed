@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/NH/kills/m_skorp.png" },
 	    	{ src: "media/NH/kills/heroic_guldan.png" },
 	    	{ src: "media/EN/kills/m_xavius.jpg" },
 	        { src: "media/NH/nighthold_placeholder.jpg",
