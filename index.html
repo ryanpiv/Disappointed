@@ -398,55 +398,6 @@
             </li>
           </ul>
         </div>
-
-        <!-- 
-        <div class="container-fluid" style="padding:0; margin:0">
-            <div class="img-gallery">
-                <div class="image-boss image-en-boss nyth">
-                    <div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>12.10.16</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss ursoc">
-                    <div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>12.11.16</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss spider">
-                    <div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>12.11.16</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss dragons">
-                    <div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>12.18.16</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss eye">
-                    <div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>1.15.17</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss cenarius">
-                	<div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>1.16.17</small>
-                    </div>
-                </div>
-                <div class="image-boss image-en-boss xavius">
-                	<div class="overlay-skull">
-                        <img class="img-responsive" src="media/skull.png" />
-                        <small>1.16.17</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
     </section>
 
     <section id="section-recruitment" class="section-recruitment">
@@ -515,29 +466,105 @@
                     <small class="section-subtitle">Members streaming our raids</small>
                 </div>
             </div>
-            <div class="row images">
-                <div class="col-lg-4 col-md-4">
-                    <h3 class="section-subtitle">Smaktat</h3>
-                    <h4 class="section-subtitle">Fire Mage</h4>
-                    <a href="https://www.twitch.tv/smaktat_" target="_blank">
-                        <img src="smaktat.png" class="stream-smaktat img-responsive img-rounded" />
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h3 class="section-subtitle">Theamishone</h3>
-                    <h4 class="section-subtitle">Holy Priest</h4>
-                    <a href="https://www.twitch.tv/theamishone" target="_blank">
-                        <img src="amish.png" class="stream-amish img-responsive img-rounded" />
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h3 class="section-subtitle">Mys7aken</h3>
-                    <h4 class="section-subtitle">Enhance / Resto Shaman</h4>
-                    <a href="https://www.twitch.tv/mys7aken" target="_blank">
-                        <img src="ken.png" class="stream-ken img-responsive img-rounded" />
-                    </a>
+            <div class="row stream-info" style=padding:15px; >
+                <div class="list-group">
+                    <div class="col-lg-4">
+                        <a class="list-group-item stream-smaktat stream-bg" onclick="setPlayer('smaktat_')">
+                            <h4 class="list-group-item-heading">
+                                Smaktat
+                            </h4>
+                            <p>Fire Mage</p>
+                            <p id='smaktat_live'></p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a class="list-group-item stream-amish stream-bg" onclick="setPlayer('theamishone')">
+                            <h4 class="list-group-item-heading">
+                                Amish
+                            </h4>
+                            <p>Holy Priest</p>
+                            <p id='theamishonelive'></p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a class="list-group-item stream-ken stream-bg" onclick="setPlayer('mys7aken')">
+                            <h4 class="list-group-item-heading">
+                                Mys7aken
+                            </h4>
+                            <p>Enh / Resto Shaman</p>
+                            <p id='mys7akenlive'></p>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <script src= "http://player.twitch.tv/js/embed/v1.js"></script>
+                    <div id="twitch" class="video-container"></div>
+                    <script type="text/javascript">
+                        var options = {
+                            width: '100%',
+                            height: 384
+                            //video: "{VIDEO_ID}"
+                        };
+                        var player = new Twitch.Player("twitch", options);
+
+                        function setPlayer(channelName){
+                            player.setChannel(channelName);
+                        }
+                    </script>
+                </div>
+            </div>
+            <script>
+            var streamNames = [ 'smaktat_', 'theamishone', 'mys7aken' ];
+
+            function requestStreamLoop(streamName, streamNames) {
+                $.ajax({
+                    streamNames: streamNames,
+                    streamName: streamName,
+                    url: 'https://api.twitch.tv/kraken/streams/' + streamName,
+                    headers: {
+                        'Client-ID': 'ewzitjh1u3pg9c2wtagi2jxgqttpjj'
+                    },
+                    success: function(data){
+                        if(data.stream != null){
+                            if(player.getChannel() == "" ){
+                                setPlayer(streamName);
+                            }
+                        } else {
+                            var index = this.streamNames.indexOf(this.streamName);
+                            if(this.streamNames.length <= index){
+                                requestStream(this.streamNames[index + 1]);
+                            } else {
+                                setPlayer('smaktat_');
+                            }
+                        }
+                    }
+                });
+            }
+            requestStreamLoop(streamNames[0], streamNames);
+
+            function setStreamStatus(streamNames){
+                for(var i = 0; i < streamNames.length; i++){
+                   $.ajax({
+                        streamName: streamNames[i],
+                        url: 'https://api.twitch.tv/kraken/streams/' + streamNames[i],
+                        headers: {
+                            'Client-ID': 'ewzitjh1u3pg9c2wtagi2jxgqttpjj'
+                        },
+                        success: function(data){
+                            if(data.stream != null){
+                                $('#' + this.streamName + 'live').text('LIVE with ' + data.stream.viewers + ' viewers!');
+                            } else {
+                                $('#' + this.streamName + 'live').text('OFFLINE');
+                            }
+                        }
+                    }); 
+               }
+            }
+
+            setStreamStatus(streamNames);
+            </script>
         </div>
     </section>
 
