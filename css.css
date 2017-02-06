@@ -311,8 +311,12 @@ a:hover{
 .section-streams a, .section-streams h4, .section-streams p{
   color:#fff !important;
 }
+.section-streams .clear-padding{
+  padding:0 !important;
+}
 .section-streams .list-group-item{
   border:none !important;
+  border-radius: 0 !important;
 }
 .section-streams .list-group-item:hover{
   opacity: 0.8;
