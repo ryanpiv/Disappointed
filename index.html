@@ -529,12 +529,13 @@
                     success: function(data){
                         if(data.stream != null){
                             if(player.getChannel() == "" ){
-                                setPlayer(streamName);
+                                setPlayer(this.streamName);
                             }
                         } else {
                             var index = this.streamNames.indexOf(this.streamName);
-                            if(this.streamNames.length <= index){
-                                requestStream(this.streamNames[index + 1]);
+                            console.log(this.streamName);
+                            if(index <= this.streamNames.length){
+                                requestStreamLoop(this.streamNames[index + 1], this.streamNames);
                             } else {
                                 setPlayer('smaktat_');
                             }
