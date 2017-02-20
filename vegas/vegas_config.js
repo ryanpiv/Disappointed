@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/NH/kills/m_trilliax.png" },
+	    	{ src: "media/NH/kills/m_chrom.png" },
 	    	{ src: "media/NH/kills/m_skorp.png" },
 	    	{ src: "media/NH/kills/heroic_guldan.png" },
 	    	{ src: "media/EN/kills/m_xavius.jpg" },
