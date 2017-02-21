@@ -175,7 +175,7 @@ a:hover{
 
 .section-recruitment, .section-streams, .section-about, .section-contact {
 	padding:5%;
-	padding-top:10%;
+	padding-top:5%;
 	z-index: 2;
 	min-height: 100vh;
 	width:100%;
@@ -225,7 +225,7 @@ a:hover{
 .section-progress{
 	background-color:#e74c3c;
 	color:white;
-  padding-top:10%;
+  padding-top:5%;
   z-index: 2;
   min-height: 100vh;
   width:100%;

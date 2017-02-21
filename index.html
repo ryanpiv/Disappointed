@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ahUCLJIXhZI&index=1&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Skorpyron</h2>
                         <p>Mythic: 2.4.17</p>
                         <p>Heroic: 1.22.17</p>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=VrOipsWm4Wo&index=2&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Chronomatic Anomaly</h2>
                         <p>Mythic: 2.19.17</p>
                         <p>Heroic: 1.22.17</p>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.twitch.tv/videos/123778969">
                         <h2>Trilliax</h2>
                         <p>Mythic: 2.19.17</p>
                         <p>Heroic: 1.22.17</p>
@@ -184,7 +184,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=zsqQ3uBEIuk&index=4&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Spellblade Aluriel</h2>
                         <p>Heroic: 1.22.17</p>
                     </a> 
@@ -192,7 +192,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=AdvmI67ROpk&index=5&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Krosus</h2>
                         <p>Heroic: 1.22.17</p>
                     </a> 
@@ -200,7 +200,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Wr57lWc4Aro&t=108s&index=8&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>High Botanist Tel’arn</h2>
                         <p>Heroic: 1.23.17</p>
                     </a> 
@@ -208,7 +208,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=AaEexq0cpDA&t=36s&index=6&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Tichondrius</h2>
                         <p>Heroic: 1.23.17</p>
                     </a> 
@@ -216,7 +216,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=YXCuqkeRt4o&index=7&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Star Augur Etraeus</h2>
                         <p>Heroic: 1.23.17</p>
                     </a> 
@@ -224,7 +224,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Q-rVj9hZEgQ&index=9&list=PLl6Xxkj0NpjkW2UEmWYX2gO2cnNPfed1Z">
                         <h2>Grand Magistrix Elisande</h2>
                         <p>Heroic: 1.30.17</p>
                     </a> 
@@ -232,7 +232,7 @@
             </li>
             <li>
                 <div> 
-                    <a href="#">
+                    <a target="_blank" href="https://www.twitch.tv/videos/118438963">
                         <h2>Gul'dan</h2>
                         <p>Heroic: 1.30.17</p>
                     </a> 
@@ -545,8 +545,8 @@
                             }
                         } else {
                             var index = this.streamNames.indexOf(this.streamName);
-                            console.log(this.streamName);
-                            if(index <= this.streamNames.length){
+                            console.log(index);
+                            if(this.streamNames.length - 1 > index){
                                 requestStreamLoop(this.streamNames[index + 1], this.streamNames);
                             } else {
                                 setPlayer('smaktat_');
