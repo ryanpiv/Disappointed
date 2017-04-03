@@ -16,18 +16,7 @@ $(document).ready(function() {
 	    	{ src: "media/NH/kills/m_chrom.png" },
 	    	{ src: "media/NH/kills/m_skorp.png" },
 	    	{ src: "media/NH/kills/heroic_guldan.png" },
-	    	{ src: "media/EN/kills/m_xavius.jpg" },
-	        { src: "media/NH/nighthold_placeholder.jpg",
-	            video: {
-	                src: [
-	                    'media/NH/nighthold.mp4',
-	                    'media/NH/nighthold.webm'
-	                ],
-	                loop: true,
-	                mute: true
-	            },
-	            delay: 31000 
-	        }
+	    	{ src: "media/EN/kills/m_xavius.jpg" }
 	    ],
 	    delay: 20000,
     	animation: 'random',
