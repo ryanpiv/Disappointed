@@ -1,6 +1,16 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/NH/nighthold_placeholder.jpg",
+	            video: {
+	                src: [
+	                    'media/7.2/72.mp4'
+	                ],
+	                loop: true,
+	                mute: true
+	            },
+	            delay: 34000 
+	        },
 	    	{ src: "media/NH/kills/m_trilliax.png" },
 	    	{ src: "media/NH/kills/m_chrom.png" },
 	    	{ src: "media/NH/kills/m_skorp.png" },
