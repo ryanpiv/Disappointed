@@ -1,10 +1,11 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
-	    	{ src: "media/NH/nighthold_placeholder.jpg",
+	    	{ src: "media/7.2/72.jpg",
 	            video: {
 	                src: [
-	                    'media/7.2/72.mp4'
+	                    'media/7.2/72.mp4',
+	                    'media/7.2/72.webm'
 	                ],
 	                loop: true,
 	                mute: true
