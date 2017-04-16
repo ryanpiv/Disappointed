@@ -1,9 +1,8 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/NH/kills/m_spellblade.jpg" },
 	    	{ src: "media/NH/kills/m_krosus.jpg" },
-	    	
-
 	    	{ src: "media/NH/kills/m_trilliax.png" },
 	    	{ src: "media/NH/kills/m_chrom.png" },
 	    	{ src: "media/NH/kills/m_skorp.png" },
