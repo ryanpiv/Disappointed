@@ -236,7 +236,17 @@ a:hover{
 }
 .wowprog, .warclogs{
   color:white;
-  text-decoration: none !important;
+  text-decoration: underline;
+}
+.container-wcl{
+  height:250px;
+}
+.iframe-wcl, .report-label{
+  height:100%;
+  width:100%;
+  font-family: "Oxygen", sans-serif;
+  border:none;
+  font-size:14px;
 }
 .img-gallery{
   display: flex;
