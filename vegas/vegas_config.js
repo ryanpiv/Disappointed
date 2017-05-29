@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/NH/kills/m_auger.jpg" },
 	    	{ src: "media/NH/kills/m_bot.jpg" },
 	    	{ src: "media/NH/kills/m_tich.jpg" },
 	    	{ src: "media/NH/kills/m_spellblade.jpg" },
