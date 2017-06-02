@@ -76,6 +76,19 @@
   transform: translateX(0);
 }
 
+/* TOMB OF SARGERAS */
+.accordion-tos ul:hover li:hover { width: 40%; }
+
+.accordion-tos ul li:nth-child(1) { background-image: url("../media/ToS/goroth.jpg"); }
+.accordion-tos ul li:nth-child(2) { background-image: url("../media/ToS/demon.jpg"); }
+.accordion-tos ul li:nth-child(3) { background-image: url("../media/ToS/harjatan.jpg"); }
+.accordion-tos ul li:nth-child(4) { background-image: url("../media/ToS/mistress.jpg"); }
+.accordion-tos ul li:nth-child(5) { background-image: url("../media/ToS/sisters.jpg"); }
+.accordion-tos ul li:nth-child(6) { background-image: url("../media/ToS/host.jpg"); }
+.accordion-tos ul li:nth-child(7) { background-image: url("../media/ToS/maiden.jpg"); }
+.accordion-tos ul li:nth-child(8) { background-image: url("../media/ToS/avatar.jpg"); }
+.accordion-tos ul li:nth-child(9) { background-image: url("../media/ToS/kj.jpg"); }
+
 /* NIGHTHOLD */
 .accordion-nh ul:hover li:hover { width: 40%; }
 
