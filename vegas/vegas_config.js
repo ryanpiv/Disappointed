@@ -1,6 +1,17 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/7.2.5/725.jpg",
+	            video: {
+	                src: [
+	                    'media/7.2.5/725.mp4',
+	                    'media/7.2.5/725.webm'
+	                ],
+	                loop: true,
+	                mute: true
+	            },
+	            delay: 27000 
+	        },
 	    	{ src: "media/NH/kills/m_auger.jpg" },
 	    	{ src: "media/NH/kills/m_bot.jpg" },
 	    	{ src: "media/NH/kills/m_tich.jpg" },
@@ -10,18 +21,7 @@ $(document).ready(function() {
 	    	{ src: "media/NH/kills/m_chrom.jpg" },
 	    	{ src: "media/NH/kills/m_skorp.jpg" },
 	    	{ src: "media/NH/kills/heroic_guldan.jpg" },
-	    	{ src: "media/EN/kills/m_xavius.jpg" },
-	    	{ src: "media/7.2/72.jpg",
-	            video: {
-	                src: [
-	                    'media/7.2/72.mp4',
-	                    'media/7.2/72.webm'
-	                ],
-	                loop: true,
-	                mute: true
-	            },
-	            delay: 34000 
-	        }
+	    	{ src: "media/EN/kills/m_xavius.jpg" }
 	    ],
 	    delay: 20000,
     	animation: 'random',
