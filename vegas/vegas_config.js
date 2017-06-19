@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$(".vegas-slideshow").vegas({
 	    slides: [
+	    	{ src: "media/ToV/kills/m_helya.jpg" },
 	    	{ src: "media/7.2.5/725.jpg",
 	            video: {
 	                src: [
