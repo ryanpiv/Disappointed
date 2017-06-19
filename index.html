@@ -31,6 +31,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="vegas/vegas.min.css" type="text/css" rel="stylesheet" />
     <link href="accordion/accordion.css" type="text/css" rel="stylesheet" />
+
+    <script src="pace/pace.js" type="text/javascript"></script>
+    <link href="pace/big-counter.css" type="text/css" rel="stylesheet" />
     <script src="vegas/vegas_config.js" type="text/javascript"></script>
 </head>
 <!-- comment -->
@@ -797,6 +800,12 @@
         video.addEventListener( "canplay", function() {
           video.play();
         });*/
+
+        Pace.on('done', function(){
+            $('.navbar').css('opacity', '1');
+            $('.overlay').css('opacity', '0.4', 'important');
+            $('section').css('opacity', '1');
+        });
     })();
 
 
