@@ -29,6 +29,23 @@ $(document).ready(function() {
             animation: 'random',
             animationDuration: 15000
         });
+
+        $(document).keydown(function(e){
+            if(e.keyCode == '37'){
+                //left
+                $(".vegas-slideshow").vegas('previous');
+            } else if(e.keyCode == '39'){
+                //right
+                $(".vegas-slideshow").vegas('next');
+            }
+        });
+
+        $(".vegas-slideshow").on("swipeleft",function(){
+            $(".vegas-slideshow").vegas('previous');
+        });
+        $(".vegas-slideshow").on("swiperight",function(){
+            $(".vegas-slideshow").vegas('next');
+        });
     })
 
 });
