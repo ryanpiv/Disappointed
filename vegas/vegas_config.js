@@ -2,18 +2,18 @@ $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
             slides: [
-                { src: "media/ToV/kills/m_helya.jpg" }, {
-                    src: "media/7.2.5/725.jpg",
+                { src: "media/ToS/tomb.jpg",
                     video: {
                         src: [
-                            'media/7.2.5/725.mp4',
-                            'media/7.2.5/725.webm'
+                            'media/ToS/ToS.mp4',
+                            'media/ToS/ToS.webm'
                         ],
                         loop: true,
                         mute: true
                     },
                     delay: 27000
                 },
+                { src: "media/ToV/kills/m_helya.jpg" },
                 { src: "media/NH/kills/m_auger.jpg" },
                 { src: "media/NH/kills/m_bot.jpg" },
                 { src: "media/NH/kills/m_tich.jpg" },
