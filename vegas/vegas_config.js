@@ -11,7 +11,7 @@ $(document).ready(function() {
                         loop: true,
                         mute: true
                     },
-                    delay: 27000
+                    delay: 
                 },
                 { src: "media/ToV/kills/m_helya.jpg" },
                 { src: "media/NH/kills/m_auger.jpg" },
