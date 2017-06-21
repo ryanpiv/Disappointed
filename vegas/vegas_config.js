@@ -1,8 +1,8 @@
 $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
-            slides: [
-                { src: "media/ToS/tomb.jpg",
+            slides: [{
+                    src: "media/ToS/tomb.jpg",
                     video: {
                         src: [
                             'media/ToS/ToS.mp4',
@@ -11,7 +11,7 @@ $(document).ready(function() {
                         loop: true,
                         mute: true
                     },
-                    delay: 
+                    delay: 33000
                 },
                 { src: "media/ToV/kills/m_helya.jpg" },
                 { src: "media/NH/kills/m_auger.jpg" },
@@ -30,22 +30,22 @@ $(document).ready(function() {
             animationDuration: 15000
         });
 
-        $(document).keydown(function(e){
-            if(e.keyCode == '37'){
+        $(document).keydown(function(e) {
+            if (e.keyCode == '37') {
                 //left
                 $(".vegas-slideshow").vegas('previous');
-            } else if(e.keyCode == '39'){
+            } else if (e.keyCode == '39') {
                 //right
                 $(".vegas-slideshow").vegas('next');
             }
         });
 
-        $(".vegas-slideshow").on("swipeleft",function(){
+        $(".vegas-slideshow").on("swipeleft", function() {
             $(".vegas-slideshow").vegas('previous');
         });
-        $(".vegas-slideshow").on("swiperight",function(){
+        $(".vegas-slideshow").on("swiperight", function() {
             $(".vegas-slideshow").vegas('next');
         });
-    })
+    });
 
 });
