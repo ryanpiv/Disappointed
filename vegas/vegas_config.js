@@ -40,10 +40,10 @@ $(document).ready(function() {
             }
         });
 
-        $(".vegas-slideshow").on("swipeleft", function() {
+        $(document).on("swipeleft", function() {
             $(".vegas-slideshow").vegas('previous');
         });
-        $(".vegas-slideshow").on("swiperight", function() {
+        $(document).on("swiperight", function() {
             $(".vegas-slideshow").vegas('next');
         });
     });
