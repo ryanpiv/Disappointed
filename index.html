@@ -247,12 +247,6 @@
                 <div class="col-lg-12">
                     <div id="nh-heroic-line"></div>
                 </div>
-                <div class="col-lg-12">
-                    <h2>Normal, 10/10</h2>
-                </div>
-                <div class="col-lg-12">
-                    <div id="nh-normal-line"></div>
-                </div>
             </div>
         </div>
         <div class="accordion accordion-nh">
@@ -402,12 +396,6 @@
                 </div>
                 <div class="col-lg-12">
                     <div id="trial-heroic-line"></div>
-                </div>
-                <div class="col-lg-12">
-                    <h2>Normal, 3/3</h2>
-                </div>
-                <div class="col-lg-12">
-                    <div id="trial-normal-line"></div>
                 </div>
             </div>
         </div>
@@ -960,81 +948,8 @@
                 bar.setText(Math.round(bar.value() * 10));
             }
         });
-        //bar3.animate(0 / 0);  // Number from 0.0 to 1.0
-
-        var bar4 = new ProgressBar.Line('#trial-normal-line', {
-            strokeWidth: 4,
-            easing: 'easeInOut',
-            duration: 1400,
-            color: '#FFEA82',
-            trailColor: '#eee',
-            trailWidth: 1,
-            svgStyle: {
-                width: '100%',
-                height: '100%'
-            },
-            text: {
-                style: {
-                    // Text color.
-                    // Default: same as stroke color (options.color)
-                    color: 'transparent',
-                    position: 'absolute',
-                    right: '0',
-                    top: '30px',
-                    padding: 0,
-                    margin: 0,
-                    transform: null
-                },
-                autoStyleContainer: false
-            },
-            from: {
-                color: '#FFEA82'
-            },
-            to: {
-                color: '#ED6A5A'
-            },
-            step: (state, bar) => {
-                bar.setText(Math.round(bar.value() * 10));
-            }
-        });
 
         var bar5 = new ProgressBar.Line('#trial-heroic-line', {
-            strokeWidth: 4,
-            easing: 'easeInOut',
-            duration: 1400,
-            color: '#FFEA82',
-            trailColor: '#eee',
-            trailWidth: 1,
-            svgStyle: {
-                width: '100%',
-                height: '100%'
-            },
-            text: {
-                style: {
-                    // Text color.
-                    // Default: same as stroke color (options.color)
-                    color: 'transparent',
-                    position: 'absolute',
-                    right: '0',
-                    top: '30px',
-                    padding: 0,
-                    margin: 0,
-                    transform: null
-                },
-                autoStyleContainer: false
-            },
-            from: {
-                color: '#FFEA82'
-            },
-            to: {
-                color: '#ED6A5A'
-            },
-            step: (state, bar) => {
-                bar.setText(Math.round(bar.value() * 10));
-            }
-        });
-
-        var bar6 = new ProgressBar.Line('#nh-normal-line', {
             strokeWidth: 4,
             easing: 'easeInOut',
             duration: 1400,
@@ -1236,13 +1151,6 @@
             offset: '90%'
         });
         var waypoint = new Waypoint({
-            element: document.getElementById('trial-normal-line'),
-            handler: function() {
-                bar4.animate(0.3 / 0.3); // Number from 0.0 to 1.0
-            },
-            offset: '90%'
-        });
-        var waypoint = new Waypoint({
             element: document.getElementById('trial-heroic-line'),
             handler: function() {
                 bar5.animate(0.3 / 0.3); // Number from 0.0 to 1.0
@@ -1253,13 +1161,6 @@
             element: document.getElementById('trial-mythic-line'),
             handler: function() {
                 bar9.animate(0.3 / 0.3); // Number from 0.0 to 1.0
-            },
-            offset: '90%'
-        });
-        var waypoint = new Waypoint({
-            element: document.getElementById('nh-normal-line'),
-            handler: function() {
-                bar6.animate(1 / 1); // Number from 0.0 to 1.0
             },
             offset: '90%'
         });
