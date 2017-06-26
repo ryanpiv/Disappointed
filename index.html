@@ -105,80 +105,121 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Tomb of Sargeras</h1>
-                    <small>Soon...</small>
                 </div>
                 <!-- <div class="col-lg-12">
                     <div id="tos-mythic-line"></div>
-                </div>
+                </div> -->
                 <div class="col-lg-12">
-                    <h2>Heroic</h2>
+                    <h2>Heroic, 8/9</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="tos-heroic-line"></div>
                 </div>
-                <div class="col-lg-12">
-                    <h2>Normal</h2>
-                </div>
-                <div class="col-lg-12">
-                    <div id="tos-normal-line"></div>
-                </div> -->
             </div>
         </div>
         <div class="accordion accordion-tos">
             <ul>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>Goroth</h2>
+                            <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>Demonic Inquisition</h2>
+                            <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>Harjatan</h2>
+                            <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>MISTRESS SASSZ'INE</h2>
+                            <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>SISTERS OF THE MOON</h2>
+                            <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>THE DESOLATE HOST</h2>
+                            <p>Heroic: 6.25.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>MAIDEN OF VIGILANCE</h2>
+                            <p>Heroic: 6.25.17</p>
                         </a>
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>FALLEN AVATAR</h2>
+                            <p>Heroic: 6.25.17</p>
                         </a>
                     </div>
                 </li>
@@ -1138,6 +1179,42 @@
             }
         });
 
+        var bar10 = new ProgressBar.Line('#tos-heroic-line', {
+            strokeWidth: 4,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: {
+                width: '100%',
+                height: '100%'
+            },
+            text: {
+                style: {
+                    // Text color.
+                    // Default: same as stroke color (options.color)
+                    color: 'transparent',
+                    position: 'absolute',
+                    right: '0',
+                    top: '30px',
+                    padding: 0,
+                    margin: 0,
+                    transform: null
+                },
+                autoStyleContainer: false
+            },
+            from: {
+                color: '#FFEA82'
+            },
+            to: {
+                color: '#ED6A5A'
+            },
+            step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 10));
+            }
+        });
+
         var waypoint = new Waypoint({
             element: document.getElementById('en-mythic-line'),
             handler: function() {
@@ -1198,6 +1275,13 @@
             element: document.getElementById('nh-mythic-line'),
             handler: function() {
                 bar8.animate(0.8 / 1); // Number from 0.0 to 1.0
+            },
+            offset: '90%'
+        });
+        var waypoint = new Waypoint({
+            element: document.getElementById('tos-heroic-line'),
+            handler: function() {
+                bar10.animate(0.8 / 0.9); // Number from 0.0 to 1.0
             },
             offset: '90%'
         });
