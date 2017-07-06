@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="media/favicon.ico" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Disappointed" />
-    <meta property="og:description" content="World of Warcraft Horde guild on US-Zul'jin. 8/9 Heroic ToS" />
+    <meta property="og:description" content="World of Warcraft Horde guild on US-Zul'jin. 8/9 Heroic ToS, 1/9 Mythic ToS" />
     <meta property="og:image" content="http://disappointed.gear.host/media/banner.png" />
     <meta property="og:image:secure_url" content="https://disappointed.gear.host/media/banner.png" />
     <meta property="og:image:width" content="240" />
@@ -31,12 +31,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="vegas/vegas.min.css" type="text/css" rel="stylesheet" />
     <link href="accordion/accordion.css" type="text/css" rel="stylesheet" />
-
     <script src="pace/pace.js" type="text/javascript"></script>
     <link href="pace/big-counter.css" type="text/css" rel="stylesheet" />
     <script src="vegas/vegas_config.js" type="text/javascript"></script>
 </head>
 <!-- comment -->
+
 <body>
     <div class="overlay"></div>
     <div class="navbar navbar-default navbar-static-top" style="text-align: right; position:fixed; width:100%; background-color:transparent; border:none" role="navigation">
@@ -72,6 +72,7 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
+                <h3 class="">1&#47;9 Mythic ToS</h3>
                 <h3 class="">8&#47;9 Heroic ToS</h3>
                 <h3 class="">Recruiting All Exceptional Players for ToS</h2>  
             </div>
@@ -105,9 +106,12 @@
                 <div class="col-lg-12">
                     <h1>Tomb of Sargeras</h1>
                 </div>
-                <!-- <div class="col-lg-12">
+                <div class="col-lg-12">
+                    <h2>Mythic, 1/9</h2>
+                </div>
+                <div class="col-lg-12">
                     <div id="tos-mythic-line"></div>
-                </div> -->
+                </div>
                 <div class="col-lg-12">
                     <h2>Heroic, 8/9</h2>
                 </div>
@@ -127,6 +131,7 @@
                     <div>
                         <a target="_blank">
                             <h2>Goroth</h2>
+                            <p>Mythic: 7.3.17</p>
                             <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
@@ -823,7 +828,7 @@
           video.play();
         });*/
 
-        Pace.on('done', function(){
+        Pace.on('done', function() {
             $('.nav').css('opacity', '1');
             $('.overlay').css('opacity', '0.4', 'important');
             $('section').css('opacity', '1');
@@ -1085,6 +1090,42 @@
             }
         });
 
+        var bar11 = new ProgressBar.Line('#tos-mythic-line', {
+            strokeWidth: 4,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            svgStyle: {
+                width: '100%',
+                height: '100%'
+            },
+            text: {
+                style: {
+                    // Text color.
+                    // Default: same as stroke color (options.color)
+                    color: 'transparent',
+                    position: 'absolute',
+                    right: '0',
+                    top: '30px',
+                    padding: 0,
+                    margin: 0,
+                    transform: null
+                },
+                autoStyleContainer: false
+            },
+            from: {
+                color: '#FFEA82'
+            },
+            to: {
+                color: '#ED6A5A'
+            },
+            step: (state, bar) => {
+                bar.setText(Math.round(bar.value() * 10));
+            }
+        });
+
         var waypoint = new Waypoint({
             element: document.getElementById('en-mythic-line'),
             handler: function() {
@@ -1131,6 +1172,13 @@
             element: document.getElementById('tos-heroic-line'),
             handler: function() {
                 bar10.animate(0.8 / 0.9); // Number from 0.0 to 1.0
+            },
+            offset: '90%'
+        });
+        var waypoint = new Waypoint({
+            element: document.getElementById('tos-mythic-line'),
+            handler: function() {
+                bar11.animate(0.1 / 0.9); // Number from 0.0 to 1.0
             },
             offset: '90%'
         });
