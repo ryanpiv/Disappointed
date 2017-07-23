@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="media/favicon.ico" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Disappointed" />
-    <meta property="og:description" content="World of Warcraft Horde guild on US-Zul'jin. 9/9 Heroic ToS, 2/9 Mythic ToS" />
+    <meta property="og:description" content="World of Warcraft Horde guild on US-Zul'jin. 9/9 Heroic ToS, 3/9 Mythic ToS" />
     <meta property="og:image" content="http://disappointed.gear.host/media/banner.png" />
     <meta property="og:image:secure_url" content="https://disappointed.gear.host/media/banner.png" />
     <meta property="og:image:width" content="240" />
@@ -83,7 +83,7 @@
         <div class="home-info">
             <div class="col-lg-12">
                 <h1 class="">&#60;Disappointed&#62;</h1>
-                <h3 class="">2&#47;9 Mythic ToS</h3>
+                <h3 class="">3&#47;9 Mythic ToS</h3>
                 <h3 class="">9&#47;9 Heroic ToS</h3>
                 <h3 class="">Recruiting Exceptional DPS for ToS</h2>  
             </div>
@@ -118,7 +118,7 @@
                     <h1>Tomb of Sargeras</h1>
                 </div>
                 <div class="col-lg-12">
-                    <h2>Mythic, 2/9</h2>
+                    <h2>Mythic, 3/9</h2>
                 </div>
                 <div class="col-lg-12">
                     <div id="tos-mythic-line"></div>
@@ -148,9 +148,15 @@
                     </div>
                 </li>
                 <li>
+                    <div class="image-boss">
+                        <div class="overlay-skull">
+                            <img class="img-responsive" src="media/skull.png" />
+                        </div>
+                    </div>
                     <div>
                         <a target="_blank">
                             <h2>Demonic Inquisition</h2>
+                            <p>Mythic: 7.22.17</p>
                             <p>Heroic: 6.24.17</p>
                         </a>
                     </div>
@@ -1171,7 +1177,7 @@
         var waypoint = new Waypoint({
             element: document.getElementById('tos-mythic-line'),
             handler: function() {
-                bar11.animate(0.2 / 0.9); // Number from 0.0 to 1.0
+                bar11.animate(0.3 / 0.9); // Number from 0.0 to 1.0
             },
             offset: '90%'
         });
