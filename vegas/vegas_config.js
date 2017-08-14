@@ -2,8 +2,9 @@ $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
             slides: [
+                { src: "media/ToS/kills/sisters.jpg" },
                 { src: "media/ToS/kills/demo.jpg" },
-            	{ src: "media/ToS/kills/h_kj.jpg" },
+                { src: "media/ToS/kills/h_kj.jpg" },
                 { src: "media/ToS/kills/harj.jpg" }, {
                     src: "media/ToS/tomb.jpg",
                     video: {
