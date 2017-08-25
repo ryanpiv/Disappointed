@@ -1,22 +1,21 @@
 $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
-            slides: [
-                { src: "media/ToS/kills/sisters.jpg" },
-                { src: "media/ToS/kills/demo.jpg" },
-                { src: "media/ToS/kills/h_kj.jpg" },
-                { src: "media/ToS/kills/harj.jpg" }, {
-                    src: "media/ToS/tomb.jpg",
+            slides: [{
+                    src: "media/7.3/73.jpg",
                     video: {
                         src: [
-                            'media/ToS/ToS.mp4',
-                            'media/ToS/ToS.webm'
+                            "media/7.3/73.webm",
+                            "media/7.3/73.mp4"
                         ],
                         loop: true,
                         mute: true
                     },
                     delay: 33000
                 },
+                { src: "media/ToS/kills/sisters.jpg" },
+                { src: "media/ToS/kills/demo.jpg" },
+                { src: "media/ToS/kills/h_kj.jpg" },
                 { src: "media/ToV/kills/m_helya.jpg" },
                 { src: "media/NH/kills/m_auger.jpg" },
                 { src: "media/NH/kills/m_bot.jpg" },
