@@ -1,7 +1,8 @@
 $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
-            slides: [{
+            slides: [
+                { src: "media/ToS/kills/host.jpg" }, {
                     src: "media/7.3/73.jpg",
                     video: {
                         src: [
