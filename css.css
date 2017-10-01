@@ -9,10 +9,19 @@ h1,
 p,
 a,
 video {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
   HTML, BODY
@@ -20,85 +29,108 @@ video {
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: "Oxygen", sans-serif;
+    font-family: "Oxygen", sans-serif;
 }
-.nav a{
-	color:white !important;
+
+.nav a {
+    color: white !important;
 }
-.nav a:hover{
-	opacity:0.7 !important;
-  color: #fff !important;
+
+.nav a:hover {
+    opacity: 0.7 !important;
+    color: #fff !important;
 }
-.nav li:hover{
-  border-bottom: 1px solid #fff;
+
+.nav li:hover {
+    border-bottom: 1px solid #fff;
 }
-.navbar-collapse{
-  border:none !important;
-  box-shadow:none !important;
-  -webkit-box-shadow:none !important;
+
+.navbar-collapse {
+    border: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
   CONTENT
 ============================================================================= */
 
-a:hover{
-  color: #23527c !important;
+a:hover {
+    color: #23527c !important;
 }
+
 .content {
-  position: relative;
-  top: 30%;
-  z-index: 2;
-  margin: 0 auto;
-  max-width: 720px;
-  text-align: center;
+    position: relative;
+    top: 30%;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: center;
 }
 
 .content__heading {
-  margin-bottom: 24px;
-  color: rgb(39,39,39);
-  font-size: 44px;
+    margin-bottom: 24px;
+    color: rgb(39, 39, 39);
+    font-size: 44px;
 }
 
 .content__teaser {
-  margin-bottom: 24px;
-  color: rgb(89,89,89);
-  font-size: 22px;
+    margin-bottom: 24px;
+    color: rgb(89, 89, 89);
+    font-size: 22px;
 }
 
 .content__cta {
-  display: inline-block;
-  margin: 0;
-  padding: 12px 48px;
-  color: rgb(255,60,100);
-  font-size: 22px;
-  text-decoration: none;
-  border: solid 4px rgb(255,60,100);
+    display: inline-block;
+    margin: 0;
+    padding: 12px 48px;
+    color: rgb(255, 60, 100);
+    font-size: 22px;
+    text-decoration: none;
+    border: solid 4px rgb(255, 60, 100);
 }
 
-.parallax { 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  z-index: 2;
+    z-index: 2;
 }
 
-.parallax-bg1{
-  /* The image used */
-  background-image: url("media/ulduar.jpg");
-  height:500px;
+.parallax-bg1 {
+    /* The image used */
+    background-image: url("media/ulduar.jpg");
+    height: 500px;
 }
 
-.parallax-bg2{
-  height:500px;
+.parallax-bg2 {
+    height: 500px;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* =============================================================================
@@ -106,29 +138,30 @@ a:hover{
 ============================================================================= */
 
 .video {
-  position: fixed !important;
-  top: 50%; left: 50%;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 
-.overlay{
-	opacity: 0;
-	position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  border: none;
-  padding: 0;
-  margin: 0;
-  z-index: 3;
-  background: url("vegas/overlays/02.png") center center;
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    background: url("vegas/overlays/02.png") center center;
 }
 
 .video-container {
@@ -141,219 +174,328 @@ a:hover{
 
 .video-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
 /* =============================================================================
   NAV
 ============================================================================= */
 
-.nav{
-	z-index: 4;
-  opacity: 0;
+.nav {
+    z-index: 4;
+    opacity: 0;
 }
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
   HOME INFO
 ============================================================================= */
-.home-info{
-	position: absolute;
-  overflow: hidden;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  line-height: 2.2em;
-  width: 100%;
-  z-index: 4;
-  bottom: 0;
+
+.home-info {
+    position: absolute;
+    overflow: hidden;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    line-height: 2.2em;
+    width: 100%;
+    z-index: 4;
+    bottom: 0;
 }
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
   ALL SECTIONS EXCEPT LANDING
 ============================================================================= */
-section{
-  opacity: 0;
-}
-.section-recruitment, .section-streams, .section-about, .section-contact {
-	padding:5%;
-	padding-top:5%;
-	z-index: 2;
-	min-height: 100vh;
-	width:100%;
-	position: relative;
+
+section {
+    opacity: 0;
 }
 
-.section-title-container{
-	text-align: center;
-	padding-bottom:5%;
+.section-recruitment,
+.section-streams,
+.section-content,
+.section-about,
+.section-contact {
+    padding: 5%;
+    padding-top: 5%;
+    z-index: 2;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
-@media only screen and (max-width : 480px) {
-  .section-title-container
-  {
-    padding-top:10%;
-  }
+
+.section-title-container {
+    text-align: center;
+    padding-bottom: 5%;
 }
-.section-title, .section-subtitle{
-	color:white;
-	text-align: center;
-	text-transform: uppercase;
+
+@media only screen and (max-width: 480px) {
+    .section-title-container {
+        padding-top: 10%;
+    }
+}
+
+.section-title,
+.section-subtitle {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .stream-info .list-group-item:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
   SECTION-LANDING
 ============================================================================= */
 
-.section-landing{
-	min-height: 100vh;
+.section-landing {
+    min-height: 100vh;
 }
-.home-info h1, .home-info h3{
-	color:white;
-	line-height: 1;
-	padding: 0;
-	margin:0;
+
+.home-info h1,
+.home-info h3 {
+    color: white;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
 }
-.home-info{
-	padding-bottom:1%;
+
+.home-info {
+    padding-bottom: 1%;
 }
+
+
+
+
+
+
+
+
+
+
 /* =============================================================================
   SECTION-PROGRESS
 ============================================================================= */
 
-.section-progress{
-	background-color:#e74c3c;
-	color:white;
-  padding-top:5%;
-  z-index: 2;
-  min-height: 100vh;
-  width:100%;
-  position: relative;
+.section-progress {
+    background-color: #e74c3c;
+    color: white;
+    padding-top: 5%;
+    z-index: 2;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
 }
+
 .section-progress h1 {
-  padding-top: 3%;
+    padding-top: 3%;
 }
-.wowprog, .warclogs{
-  color:white;
-  text-decoration: underline;
+
+.wowprog,
+.warclogs {
+    color: white;
+    text-decoration: underline;
 }
-.container-wcl{
-  height:250px;
+
+.container-wcl {
+    height: 250px;
 }
-.iframe-wcl, .report-label{
-  height:100%;
-  width:100%;
-  font-family: "Oxygen", sans-serif;
-  border:none;
-  font-size:14px;
+
+.iframe-wcl,
+.report-label {
+    height: 100%;
+    width: 100%;
+    font-family: "Oxygen", sans-serif;
+    border: none;
+    font-size: 14px;
 }
-.img-gallery{
-  display: flex;
-  padding-top:2%;
+
+.img-gallery {
+    display: flex;
+    padding-top: 2%;
 }
-.image-boss{
-  position: absolute;
-  display: flex;
-  height:100%;
-  width:14.1%;
-  background-size:cover;
-  flex: 1 100%;
-  align-items: center;
-  justify-content: center;
+
+.image-boss {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 14.1%;
+    background-size: cover;
+    flex: 1 100%;
+    align-items: center;
+    justify-content: center;
 }
-.image-en-boss{
-  width:14.1%;
+
+.image-en-boss {
+    width: 14.1%;
 }
-.image-tov-boss{
-  width:33.1%;
+
+.image-tov-boss {
+    width: 33.1%;
 }
-.overlay-skull{
-  height: 100%;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0,0,0,0.4);
-  flex-wrap: wrap;
+
+.overlay-skull {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap;
 }
-.overlay-skull > img {
-  opacity: 0.6;
-  margin:0 auto !important;
+
+.overlay-skull>img {
+    opacity: 0.6;
+    margin: 0 auto !important;
 }
-.overlay-skull > small{
-  text-align: center;
-  flex-basis: 100%;
+
+.overlay-skull>small {
+    text-align: center;
+    flex-basis: 100%;
 }
+
 
 /* =============================================================================
   SECTION-RECRUITMENT
 ============================================================================= */
 
-.section-recruitment{
-	background-color: #27ae60;;
+.section-recruitment {
+    background-color: #27ae60;
+    ;
 }
+
 
 /* =============================================================================
   SECTION-STREAMS
 ============================================================================= */
 
-.section-streams{
-	background-color: #2980b9;;
+.section-streams {
+    background-color: #2980b9;
+    ;
 }
-.images{
-	text-align: center;
+
+.images {
+    text-align: center;
 }
-.stream-smaktat{
-	background-image:url('media/firemage.jpg');
+
+.stream-smaktat {
+    background-image: url('media/firemage.jpg');
 }
-.stream-amish{
-	background-image:url('media/holypriest.jpg');
+
+.stream-amish {
+    background-image: url('media/holypriest.jpg');
 }
-.stream-ken{
-  background-image:url('media/enhshaman.jpg');
+
+.stream-ken {
+    background-image: url('media/enhshaman.jpg');
 }
-.stream-bg{
-  background-size:cover;
+
+.stream-bg {
+    background-size: cover;
 }
-.section-streams .list-group-item-heading{
-  text-transform: uppercase;
+
+.section-streams .list-group-item-heading {
+    text-transform: uppercase;
 }
-.section-streams a, .section-streams h4, .section-streams p{
-  color:#fff !important;
+
+.section-streams a,
+.section-streams h4,
+.section-streams p {
+    color: #fff !important;
 }
-.section-streams .clear-padding{
-  padding:0 !important;
+
+.section-streams .clear-padding {
+    padding: 0 !important;
 }
-.section-streams .list-group-item{
-  border:none !important;
-  border-radius: 0 !important;
+
+.section-streams .list-group-item {
+    border: none !important;
+    border-radius: 0 !important;
 }
-.section-streams .list-group-item:hover{
-  opacity: 0.8;
+
+.section-streams .list-group-item:hover {
+    opacity: 0.8;
 }
+
+
+/* =============================================================================
+  SECTION-CONTENT
+============================================================================= */
+
+.section-content {
+    background-color: #673AB7;
+}
+
+.sc-col {
+    padding: 0 !important;
+}
+
+
+
 
 /* =============================================================================
   SECTION-ABOUT
 ============================================================================= */
 
-.section-about{
-	background-color: #e67e22;;
+.section-about {
+    background-color: #e67e22;
+    ;
 }
-.section-about-content{
-	color:white;
+
+.section-about-content {
+    color: white;
 }
+
+
 
 /* =============================================================================
   SECTION-CONTACT
 ============================================================================= */
 
-.section-contact{
-	background-color: #8e44ad;;
+.section-contact {
+    background-color: #8e44ad;
+    ;
 }
+
 .section-contact p {
-	color:white;
-	text-align:center;
+    color: white;
+    text-align: center;
 }
