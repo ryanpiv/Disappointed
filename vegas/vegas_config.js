@@ -2,6 +2,7 @@ $(document).ready(function() {
     Pace.on('done', function() {
         $(".vegas-slideshow").vegas({
             slides: [
+                { src: "media/ToS/kills/mistress.jpg" },
                 { src: "media/ToS/kills/host.jpg" }, {
                     src: "media/7.3/73.jpg",
                     video: {
